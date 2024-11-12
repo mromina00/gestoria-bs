@@ -122,6 +122,7 @@ body{
 
 .cta-button{
     border: none;
+    background: none;
 }
 
 .cta-button a{
@@ -138,6 +139,7 @@ body{
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: all .2s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
 }
 
 
@@ -353,17 +355,20 @@ body{
     overflow: hidden;
 }
 
-.service-card:hover{
+.service-card:hover,
+.service-card.open{
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
     background-color: var(--bg-crudo);
 }
 
-.service-card:hover h3{
+.service-card:hover h3,
+.service-card.open h3{
     color: var(--gris-oscuro);
 }
 
-.service-card:hover .service-description{
+.service-card:hover .service-description,
+.service-card.open .service-description{
     height: auto;
     opacity: 1;
     margin-top: 1rem;

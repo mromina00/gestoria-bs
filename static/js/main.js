@@ -193,3 +193,23 @@ mobileMenuBtn?.addEventListener('click', () => {
     mobileMenuBtn?.classList.toggle('menu-active')
 })
 
+// funcionalidad tarjetas
+
+const serviceCards = document.querySelectorAll('.service-card');
+
+serviceCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        e.stopPropagation();
+    
+        if (card.classList.contains('open')) {
+            card.classList.remove('open');
+        } else {
+            serviceCards.forEach(c => c.classList.remove('open'));
+            card.classList.add('open');
+        }
+    });
+});
+
+document.addEventListener('click', () => {
+    serviceCards.forEach(card => card.classList.remove('open'));
+});
