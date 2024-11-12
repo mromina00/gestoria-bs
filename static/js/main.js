@@ -72,7 +72,7 @@ document.querySelector('#app').innerHTML = `
             </div>
             <div class="about-text">
                 <h2>Quién Soy</h2>
-                <p>Soy <b>Bibiana Sosa</b>, matriculada como mandataria por la Dirección Nacional del Registro de Propiedad del automotor, dedicada a ofrecer soluciones confiables para tus gestiones vehiculares. Me especializo en hacer que todos los trámites relacionados con tu vehículo sean simples y sin complicaciones.</p>
+                <p>Soy <b>Bibiana Sosa</b>, matriculada como mandataria por la Dirección Nacional del Registro de Propiedad del Automotor, dedicada a ofrecer soluciones confiables para tus gestiones vehiculares. Me especializo en hacer que todos los trámites relacionados con tu vehículo sean simples y sin complicaciones.</p>
                 <p>Mi compromiso es brindarte la tranquilidad y seguridad que necesitás en cada gestión, garantizando transparencia y eficiencia en todos los procesos.</p>
                 <div class="credentials">
                     <div class="credential-item">
@@ -149,7 +149,7 @@ document.querySelector('#app').innerHTML = `
                         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
                     </div>
                     <div class="contact-details">
-                        <p>Email bibianso33@gmail.com</p>
+                        <p>Email: bibianso33@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +178,7 @@ document.querySelector('#app').innerHTML = `
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; ${new Date().getFullYear()} BS Gestoría | Sitio web creado por <a href="mailto:mromina03@gmail.com" target="_blank">Romina Moreno</a></p>
+            <p>&copy; ${new Date().getFullYear()} BS Gestoría | Sitio web creado por <a href="https://www.linkedin.com/in/romina-moreno-62b479290/" target="_blank">Romina Moreno</a></p>
         </div>
     </footer>
 `
