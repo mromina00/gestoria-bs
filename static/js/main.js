@@ -48,7 +48,7 @@ document.querySelector('#app').innerHTML = `
             </button>
         </div>
         <div class="hero-image">
-            <img src="./static/img/mini-cooper.webp" alt="Minie Cooper" class="car-img">
+            <img src="./static/img/mini-cooper.webp" alt="Minie Cooper" class="car-img" loading="lazy">
         </div>
         <div class="wave-decoration">
             <svg class="gray-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -68,7 +68,7 @@ document.querySelector('#app').innerHTML = `
         
         <div class="about-content">
             <div class="about-image">
-                <img src="./static/img/about-img.webp" alt="Gestoría Bibiana Sosa" class="profile-img">
+                <img src="./static/img/about-img.webp" alt="Gestoría Bibiana Sosa" class="profile-img" loading="lazy">
             </div>
             <div class="about-text">
                 <h2>Quién Soy</h2>
@@ -185,15 +185,23 @@ document.querySelector('#app').innerHTML = `
 
 // funcionalidad mobile menu
 
-const mobileMenuBtn = document.querySelector('.mobile-menu')
-const nav = document.querySelector('.nav')
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const nav = document.querySelector('.nav');
+const navLinks = document.querySelectorAll('.nav a');
 
 mobileMenuBtn?.addEventListener('click', () => {
-    nav?.classList.toggle('nav-active')
-    mobileMenuBtn?.classList.toggle('menu-active')
-})
+    nav?.classList.toggle('nav-active');
+    mobileMenuBtn?.classList.toggle('menu-active');
+});
 
-// funcionalidad tarjetas
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        nav.classList.remove('nav-active');
+        mobileMenuBtn.classList.remove('menu-active');
+    });
+});
+
+// funcionalidad tarjetas mobile
 
 const serviceCards = document.querySelectorAll('.service-card');
 
@@ -210,6 +218,7 @@ serviceCards.forEach(card => {
     });
 });
 
+// cerrar tarjetas haciendo clic en la pantalla
 document.addEventListener('click', () => {
     serviceCards.forEach(card => card.classList.remove('open'));
 });
