@@ -59,7 +59,7 @@ export const services = [
         ]
     },
     {
-        title: 'Incripción / Cancelación de Prenda',
+        title: 'Inscripción / Cancelación de Prenda',
         description: 'Gestión y presentación de la documentación para la inscripción o cancelación de prenda sobre el vehículo, permitiendo regularizar la situación de créditos prendarios.'
     },
     {
